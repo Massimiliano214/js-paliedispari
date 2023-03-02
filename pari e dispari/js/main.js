@@ -13,15 +13,12 @@ console.log("numero pc " + variabileCorta);
 
 const sommaNumeri = numeroScelto + variabileCorta;
 
-
+let risultatoPari;
 
 console.log("somma dei numeri " + sommaNumeri)
 
-let risultatoPari = false;
 
-tipoSomma(sommaNumeri);
-
-const risultatoVero = risultatoPari;
+risultatoPari = tipoSomma(sommaNumeri);
 
 if ((scelta == "pari") && (risultatoPari)) {
     console.log("Hai vinto");

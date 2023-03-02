@@ -5,27 +5,41 @@ let decremento = word.length - 1;
 
 let palindromo = false;
 
+let risultatoTotale;
+
 console.log("lunghezza parola " + decremento);
-while (incremento < word.length)  {
 
-    
-    if (word[incremento] == word[decremento]) {
-        palindromo = true;
-        console.log(word[incremento])
-        console.log(word[decremento])
-        
-    } else if (word[incremento] == word[decremento]) {
-        palindromo = false;
-    };
-
-    incremento++;
-    decremento--;
-};
+palindromoRicerca(word[incremento], word[decremento])
 
 
-if (palindromo) {
+risultatoTotale = palindromoRicerca(word[incremento], word[decremento]);
+
+if (risultatoTotale) {
     alert("la parola inserita è palindroma");
 } else {
     alert("la parola inserita non è palindroma");
 };
 
+function palindromoRicerca (primaLettera, secondaLettera) {
+    let risultatoPalindromo;
+
+    console.log(risultatoPalindromo);
+
+    while (incremento < word.length) {
+        if (primaLettera == secondaLettera) {
+            risultatoPalindromo = true;
+            console.log(risultatoPalindromo);
+            
+        } else if (primaLettera == secondaLettera) {
+            risultatoPalindromo = false;
+            console.log(risultatoPalindromo);
+            return risultatoPalindromo;
+            
+        };
+    
+        incremento++;
+        decremento--;
+        return risultatoPalindromo;
+    }
+    
+};
