@@ -9,7 +9,7 @@ let risultatoTotale;
 
 console.log("lunghezza parola " + decremento);
 
-palindromoRicerca(word[incremento], word[decremento])
+let risultatoPal = palindromoRicerca(word[incremento], word[decremento])
 
 
 risultatoTotale = palindromoRicerca(word[incremento], word[decremento]);
@@ -17,21 +17,28 @@ risultatoTotale = palindromoRicerca(word[incremento], word[decremento]);
 console.log("ris totale " + risultatoTotale);
 
 if (risultatoTotale) {
-    alert("la parola inserita è palindroma");
+    
 } else {
     
 };
 
+let verita = false;
 
 while (incremento < word.length) {
-    if (risultatoPalindromo) {
-        incremento++;
-        decremento--;
-    } else {
-        alert("la parola inserita non è palindroma");
+    if (risultatoPal) {
+        verita = true;
+        
     }
-     
+    incremento++;
+    decremento--;
+};
+
+if (verita) {
+    alert("la parola inserita è palindroma");
 }
+else {
+    alert("la parola inserita non è palindroma");
+};
 
 
 
