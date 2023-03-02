@@ -13,9 +13,15 @@ console.log("numero pc " + variabileCorta);
 
 const sommaNumeri = numeroScelto + variabileCorta;
 
+
+
 console.log("somma dei numeri " + sommaNumeri)
 
+let risultatoPari = false;
+
 tipoSomma(sommaNumeri);
+
+const risultatoVero = risultatoPari;
 
 if ((scelta == "pari") && (risultatoPari)) {
     console.log("Hai vinto");
@@ -32,6 +38,7 @@ function numeroCasuale (fattore, valoreSommato) {
 };
 
 function tipoSomma (sommaDaVerificare) {
+    let risultatoPari;
     const sommaTotale = sommaDaVerificare;
     if (sommaTotale % 2 == 0) {
         risultatoPari = true;

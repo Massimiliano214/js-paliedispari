@@ -5,7 +5,7 @@ let decremento = word.length - 1;
 
 let palindromo = false;
 
-console.log(decremento);
+console.log("lunghezza parola " + decremento);
 while (incremento < word.length)  {
 
     
@@ -14,7 +14,9 @@ while (incremento < word.length)  {
         console.log(word[incremento])
         console.log(word[decremento])
         
-    }
+    } else if (word[incremento] == word[decremento]) {
+        palindromo = false;
+    };
 
     incremento++;
     decremento--;
