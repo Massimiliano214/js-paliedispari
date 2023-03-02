@@ -30,7 +30,7 @@ function palindromoRicerca (primaLettera, secondaLettera) {
             risultatoPalindromo = true;
             console.log(risultatoPalindromo);
             
-        } else if (primaLettera == secondaLettera) {
+        } else if (primaLettera != secondaLettera) {
             risultatoPalindromo = false;
             console.log(risultatoPalindromo);
             return risultatoPalindromo;
@@ -39,7 +39,7 @@ function palindromoRicerca (primaLettera, secondaLettera) {
     
         incremento++;
         decremento--;
-        return risultatoPalindromo;
+        
     }
     
 };
