@@ -10,7 +10,10 @@ while (incremento < word.length)  {
 
     
     if (word[incremento] == word[decremento]) {
-        let palindromo = true;
+        palindromo = true;
+        console.log(word[incremento])
+        console.log(word[decremento])
+        
     }
 
     incremento++;
