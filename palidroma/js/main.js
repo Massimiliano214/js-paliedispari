@@ -33,13 +33,13 @@ function palindromoRicerca (primaLettera, secondaLettera) {
         } else if (primaLettera != secondaLettera) {
             risultatoPalindromo = false;
             console.log(risultatoPalindromo);
-            return risultatoPalindromo;
+            incremento = 100;
             
         };
     
         incremento++;
         decremento--;
-        
+        return risultatoPalindromo;
     }
     
 };
