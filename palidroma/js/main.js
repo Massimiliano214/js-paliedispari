@@ -14,32 +14,46 @@ palindromoRicerca(word[incremento], word[decremento])
 
 risultatoTotale = palindromoRicerca(word[incremento], word[decremento]);
 
+console.log("ris totale " + risultatoTotale);
+
 if (risultatoTotale) {
     alert("la parola inserita è palindroma");
 } else {
-    alert("la parola inserita non è palindroma");
+    
 };
 
+
+while (incremento < word.length) {
+    if (risultatoPalindromo) {
+        incremento++;
+        decremento--;
+    } else {
+        alert("la parola inserita non è palindroma");
+    }
+     
+}
+
+
+
 function palindromoRicerca (primaLettera, secondaLettera) {
-    let risultatoPalindromo;
+    let risultatoPalindromo = false;
 
     console.log(risultatoPalindromo);
-
-    while (incremento < word.length) {
         if (primaLettera == secondaLettera) {
             risultatoPalindromo = true;
             console.log(risultatoPalindromo);
+            return risultatoPalindromo;
             
         } else if (primaLettera != secondaLettera) {
             risultatoPalindromo = false;
             console.log(risultatoPalindromo);
-            incremento = 100;
+            return risultatoPalindromo;
             
         };
     
-        incremento++;
-        decremento--;
-        return risultatoPalindromo;
-    }
+        
+        
     
 };
+
+
